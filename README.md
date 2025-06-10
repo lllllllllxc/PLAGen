@@ -4,7 +4,7 @@
 
 Although current automatic report generation technologies have made significant progress, they are still defective in processing pixel-level information, which does not fully utilize the local pixel-level information and ignores the abnormal regions. To obtain visual information about abnormal areas and to exclude normal areas from interfering with report generation, we propose pixel-level information of localized and abnormal regions for the radiology report generation framework (PLAGen).  In the abnormal regions prominence module (ARPM), we use weak supervision to obtain the prominence map of the abnormal regions with a dark background, which reduces the background interference and then get the pixel-level information of the abnormal regions by the visual extractor. In the organ mask generation module (OMGM), we use semantic segmentation to segment the images into mask images of each organ to obtain localized pixel-level information and combine it with corresponding disease keywords to enhance the recognition of diseases. In this process, we introduce a cosine similarity function to constrain the consistency between the pixel-level information and the textual information. Additionally, position information is added as input to the multimodal alignment module (MAM), which enriches the cross-modal information and enhances the connections between local information. We perform a large number of experiments on the public IU X-ray dataset, and the results demonstrate that PLAGen performs better compared to existing state-of-the-art methods.
 
-![](C:\Users\35106\Desktop\NLP\model.png)
+![](model.png)
 
 ## Updates
 
